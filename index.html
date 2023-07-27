@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -9,64 +8,88 @@
     <link rel="stylesheet" href="assets/css/timeline.scss" />
 
     <!-- =====BOX ICONS===== -->
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <link rel="stylesheet" href="" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Akshat</title>
-</head>
 
-<body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("dvO688QXvO2JCM-Gz");
+      })();
+    </script>
+  </head>
+
+  <body>
     <!--===== HEADER =====-->
     <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#home" class="nav__logo">Akshat</a>
-            </div>
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#home" class="nav__logo">Akshat</a>
+        </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#qualification" class="nav__link">Qualification</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#experience" class="nav__link">Experience</a>
-                    </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">Qualification</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bx bx-menu nav-menu__logo"></i>
-            </div>
-        </nav>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu nav-menu__logo"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-                <h1 class="home__title">
-                    Hi,<br />I'am <span class="home__title-color">Akshat Johar</span
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div
+          class="home__data"
+          data-aos="fade"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="800"
+        >
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Akshat Johar</span
             ><br />
             Student
           </h1>
@@ -121,8 +144,9 @@
           <div>
             <h2 class="about__subtitle">I'am Akshat Johar</h2>
             <p class="about__text">
-              I'm a sophomore at Bits-Pilani, Hyderabad Campus currently
-              pursuing B.E. in Electrical and Electronics
+              I'm a senior at Bits-Pilani, Hyderabad Campus currently pursuing
+              B.E. in Electrical and Electronics and Minor in Computing and
+              Intelligence
             </p>
             <br />
             <a href="assets/pdf/cv.pdf" target="_blank" class="button"
@@ -194,9 +218,9 @@
               <p>
                 <b>BITS Pilani , Hyderabad Campus</b>
                 <br />2020-2024 <br />B.E Electrical and Electronics
-                <!-- <br />Data Science Minor <br /> -->
+                <br />Computing and Intelligence Minor <br />
                 <br />
-                CGPA - 9.32
+                CGPA - 9.37
               </p>
             </div>
             <!-- cd-timeline-content -->
@@ -575,20 +599,22 @@
           data-aos-easing="easing-in-out"
           data-aos-duration="800"
         >
-          <form action="" class="contact__form">
+          <form class="contact__form">
             <input
               type="text"
               placeholder="Name"
+              id="name"
               class="contact__input username"
             />
             <input
               type="mail"
+              id="email"
               placeholder="Email"
               class="contact__input email"
             />
             <textarea
               name=""
-              id=""
+              id="message"
               placeholder="Message"
               cols="0"
               rows="10"
@@ -598,6 +624,7 @@
               type="button"
               value="Submit"
               class="contact__button button submit"
+              onclick="sendMail()"
             />
           </form>
         </div>
@@ -643,77 +670,5 @@
     <script>
       AOS.init();
     </script>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_z989BxSDSyJjFgpWyDSAw");
-      })();
-    </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <script>
-      function validate() {
-        let name = document.querySelector(".username");
-        let email = document.querySelector(".email");
-        let msg = document.querySelector(".message");
-        let submit = document.querySelector(".submit");
-
-        submit.addEventListener("click", (e) => {
-          e.preventDefault();
-
-          if (name.value == "" || email.value == "" || msg.value == " ") {
-            inputempty();
-          } else {
-            sendmail(name.value, email.value, msg.value);
-            success();
-            console.log("email sent");
-          }
-        });
-      }
-
-      validate();
-
-      function sendmail(name, email, msg) {
-        emailjs.send("service_hbx8u3r", "template_rnd4vib", {
-          from_name: name,
-          to_name: email,
-
-          message: msg,
-        });
-      }
-
-      function success() {
-        swal({
-          title: "Good job!",
-          text: "Successfully Sent Message!",
-          icon: "success",
-          button: "OK!",
-        });
-      }
-
-      function error() {
-        swal({
-          title: "Oops....!",
-          text: "Something went wrong , message could not be sent!",
-          icon: "error",
-          button: "OK!",
-        });
-      }
-
-      function inputempty() {
-        swal({
-          title: "Oops....!",
-          text: "Input Fields are Required!",
-          icon: "error",
-          button: "OK!",
-        });
-      }
-    </script>
-
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
